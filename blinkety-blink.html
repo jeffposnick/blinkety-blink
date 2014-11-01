@@ -59,6 +59,9 @@ Blink is making a comeback!
        * @default 1000
        */
       duration: 1000,
+      durationChanged: function() {
+        this.$.animation.play();
+      },
       domReady: function() {
         this.$.animation.target = this.$.container;
         this.$.animation.play();
