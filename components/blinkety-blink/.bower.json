@@ -1,0 +1,37 @@
+{
+  "name": "blinkety-blink",
+  "authors": [
+    "Jeff Posnick <jeffy@google.com>"
+  ],
+  "description": "Element providing solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "seed"
+  ],
+  "main": "blinkety-blink.html",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.4.2",
+    "core-animation": "Polymer/core-animation#^0.4.2"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^0.7.3"
+  },
+  "_release": "6deda983e6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6deda983e66e3dd12619f1c33f2789cc9228785b"
+  },
+  "_source": "git://github.com/jeffposnick/blinkety-blink.git",
+  "_target": "master",
+  "_originalSource": "jeffposnick/blinkety-blink",
+  "_direct": true
+}

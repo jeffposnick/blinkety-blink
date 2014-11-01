@@ -1,0 +1,68 @@
+<!--
+    @license
+    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+    Code distributed by Google as part of the polymer project is also
+    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-animation/core-animation.html">
+
+<!--
+Blink is making a comeback!
+
+##### Example
+
+    <blinkety-blink duration="2000"></blinkety-blink>
+
+@element blinkety-blink
+@blurb Blink is making a comeback!
+@status alpha
+@homepage http://polymerlabs.github.io/seed-element
+-->
+<polymer-element name="blinkety-blink" attributes="duration">
+  <template>
+    <core-animation id="animation"
+                    duration="{{duration}}"
+                    iterations="Infinity">
+      <core-animation-keyframe>
+        <core-animation-prop name="opacity"
+                             value="1">
+        </core-animation-prop>
+      </core-animation-keyframe>
+      <core-animation-keyframe>
+        <core-animation-prop name="opacity"
+                             value="0">
+        </core-animation-prop>
+      </core-animation-keyframe>
+      <core-animation-keyframe>
+        <core-animation-prop name="opacity"
+                             value="1">
+        </core-animation-prop>
+      </core-animation-keyframe>
+    </core-animation>
+    
+    <div id="container">
+      <content></content>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      /**
+       * The `duration` attribute specifies the blink duration.
+       * It's in ms.
+       *
+       * @attribute duration
+       * @default 1000
+       */
+      duration: 1000,
+      domReady: function() {
+        this.$.animation.target = this.$.container;
+        this.$.animation.play();
+      }
+    });
+  </script>
+</polymer-element>

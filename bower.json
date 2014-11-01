@@ -1,0 +1,7 @@
+{
+  "name": "blinkety-blink#gh-pages",
+  "private": true,
+  "dependencies": {
+    "blinkety-blink": "jeffposnick/blinkety-blink#master"
+  }
+}
