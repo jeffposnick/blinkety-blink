@@ -31,4 +31,4 @@ The tests are also compatible with [web-component-tester](https://github.com/Pol
 npm install -g web-component-tester
 wct
 ```
-Test
+Tes
